@@ -16,7 +16,7 @@ body {
 .container {
     border: 2px solid rgb(255, 255, 255);
     height: min-content;
-    width: 90%;
+    width: 30%;
     background-color: rgb(7, 7, 7);
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ body {
     display: flex;
     align-items: center;
     height: 100px;
-    width: 40%;
+    width: 100%;
 }
 
 .item img {
@@ -140,18 +140,21 @@ body {
 }
 
 .total-container {
-    width: 100%;
-    padding: 10px;
+    width: 100%; /* ocupa toda a linha */
     display: flex;
-    justify-content: left;
     align-items: center;
     gap: 10px;
     background-color: rgb(7, 7, 7);
     box-sizing: border-box;
     margin-top: 10px;
     font-weight: bold;
-    margin-left: 31.3%;
-    
+    justify-content: flex-end; 
+}
+
+.total-container label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
 
 .total-container input {
@@ -161,12 +164,10 @@ body {
     border: 2px solid rgb(224, 56, 4);
     border-radius: 5px;
     background-color: white;
+    font-weight: bolder;
+    display: flex;
 }
 
-#total {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .final {
     margin-top: 30px;
@@ -174,7 +175,7 @@ body {
     display: flex;
     gap: 10px;
     justify-content: left;
-    margin-left: 8%;
+    margin-left: 5%;
 }
 
 .final button {
@@ -186,6 +187,7 @@ body {
     font-size: large;
     transition: 0.2s;
     cursor: pointer;
+    justify-content: center;
 }
 
 .final button:hover {
