@@ -17,6 +17,7 @@ body {
     scrollbar-width: none;
         letter-spacing: 2px;
         max-width: 100vw;
+        overflow-x: hidden;
 }
 
 header {
@@ -343,4 +344,88 @@ footer a:hover{
 
 .hero-card button {
         margin-top: 1rem;
+}
+
+.product-container {
+        margin-top: 72px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        margin: 120px 12vw;
+        gap: 4vw;
+}
+
+.image-container {
+        width: 40vw;
+        height: 40vw;
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.product-info-container label {
+        font-size: 0.6em;
+}
+
+.product-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+select {
+  border: 1px solid #ddd;
+  background: transparent;
+        color: white;
+  padding: 5px 20px;
+  transition: 0.4s;
+        font-size: 0.5em;
+}
+
+select:hover,
+select:focus {
+  background: transparent;
+}
+
+option:first-of-type {
+  border-radius: 0;
+}
+
+option:last-of-type {
+  border-radius: 0;
+}
+
+option:not(option:last-of-type) {
+  border-bottom: none;
+}
+
+option {
+        background-color: var(--background-primary);
+        color: white;
+        border-color: white;
+        border-width: 1px;
+        border-style: solid;
+}
+
+.text-muted {
+        color: #ffffff99
+}
+
+.text-info {
+        font-size: 0.5em;
+}
+
+.price-accent {
+        color: #3bc928;
+        font-size: 0.55em;
+}
+
+.entire {
+        width: 100%
+}
+
+.price-information {
+        margin-top: 0.35em;
 }
