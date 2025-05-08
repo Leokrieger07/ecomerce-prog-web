@@ -73,6 +73,7 @@ header {
     border-radius: 8px;
     padding: 5px 10px;
     width: 400px;
+    border: 1px solid rgb(180, 176, 176);
 }
 
 .pesquisa input {
@@ -81,7 +82,7 @@ header {
     flex: 1;
     font-size: 16px;
     padding: 8px;
-        color: white;
+    color: white;
     background: transparent;
   }
 
@@ -249,6 +250,7 @@ footer {
     justify-content: flex-start;
     align-items: center;
     height: auto;
+    margin-top: 50px;
 }
 
 footer button {
