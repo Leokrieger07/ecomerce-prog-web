@@ -196,8 +196,6 @@ header {
     width: 22%;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 8px;
     background-color: white;
     border-radius: 10px;
@@ -234,8 +232,7 @@ header {
 
   p{
     font-family:'Calibri';
-    font-size: 1.5em;
-    font-weight: bolder;
+    font-size: 0.7em;
   }
 
   
