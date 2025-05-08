@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #070707;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    color: rgb(255, 251, 250);
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.container{
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 45px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 300px;
+    background-color: rgb(17, 16, 16);
+    width: 380px;
+    height: 650px;
+}
+
+input{
+    border-radius: 10px;
+    width: 300px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border: 2px solid rgb(224, 56, 4);
+    flex: 1;
+    font-size: 16px;
+    padding: 8px;
+    background: transparent;
+    color: white;
+    margin: 20px;
+}
+
+input:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.cadastrar{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: rgb(190, 60, 16);
+    margin-top: 4px;
+    transition: 0.1s;
+}
+
+.cadastrar:hover{
+    background-color: rgb(37, 32, 29);
+    transform: scale(1.05);
+}
+
+p{
+    color: white;
+    font-size: 12px;
+    
+}
+a{
+    color: rgb(224, 56, 4);
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
