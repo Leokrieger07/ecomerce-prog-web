@@ -356,8 +356,8 @@ footer a:hover{
 }
 
 .image-container {
-        width: 40vw;
-        height: 40vw;
+        width: fit-content;
+        height:fit-content;
         background-color: white;
         border-radius: 12px;
         display: flex;
