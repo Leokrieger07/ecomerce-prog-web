@@ -202,6 +202,7 @@ header {
     flex-direction: column;
     cursor: pointer;
     transition: transform 0.1s;
+        margin-bottom: 1.3em;
 }
 
 .produtos:hover{
@@ -220,14 +221,13 @@ header {
     box-sizing: border-box;
   }
 
+.produtos span {
+        margin-top: 0.2em;
+}
+
   .produto img {
     max-width: 100%;
     height: auto;
-  }  
-
-  h3{
-    padding: 10px;
-    font-size: 1.8em;
   }
 
   p{
