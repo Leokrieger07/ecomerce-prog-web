@@ -63,7 +63,7 @@ header {
     display: flex;
     align-items: center;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 5px 10px;
     width: 400px;
 }
@@ -176,6 +176,7 @@ header {
   .peixe img:hover{
     transform: scale(1.05);
     cursor: pointer;
+    border-color: #ffffff;
   }
   
   .peixe span {
