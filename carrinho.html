@@ -1,113 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br'">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrinho - Fisher Parts</title>
     <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
 
-</head>
-<body>
-    <div class="container">
-        <div class="cabecalho">
-            <a href="index.html">
-                <button class="voltar"><h4><</h4></button>
-            </a>
-            <h1 class="titulo">Carrinho de Compras</h1>
-        </div>
-
-        <ul class="produtos">
-            <li class="item">
-                <img src="imagens/linha.png" alt="Linha" />
-                <div class="detalhes">
-                    <div class="info">
-                        <h3>Linha</h3>
-                        <p>79,99</p>
-                    </div>
-                    <div class="quant">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-            </li>
-
-            <li class="item">
-                <img src="imagens/boia.png" alt="Boia" />
-                <div class="detalhes">
-                    <div class="info">
-                        <h3>Boia</h3>
-                        <p>79,99</p>
-                    </div>
-                    <div class="quant">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-            </li>
-
-            <li class="item">
-                <img src="imagens/molinete.png" alt="Molinetes" />
-                <div class="detalhes">
-                    <div class="info">
-                        <h3>Molinetes</h3>
-                        <p>79,99</p>
-                    </div>
-                    <div class="quant">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-            </li>
-
-            <li class="item">
-                <img src="imagens/vara.png" alt="Vara" />
-                <div class="detalhes">
-                    <div class="info">
-                        <h3>Vara</h3>
-                        <p>79,99</p>
-                    </div>
-                    <div class="quant">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-            </li>
-
-            <li class="item">
-                <img src="imagens/faca.png" alt="Faca" />
-                <div class="detalhes">
-                    <div class="info">
-                        <h3>Faca</h3>
-                        <p>79,99</p>
-                    </div>
-                    <div class="quant">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                </div>
-            </li>
+  <body>
+    <header>
+      <div class="esquerda">
+        <img src="/imagens/LogominimalistadaFisher-Parts.png" class="logo">
+        <ul class="menu">
+          <li><a href="#artigos">Artigos</a></li>
+          <li><a href="#botes">Botes</a></li>
+          <li><a href="#sobre-nos">Sobre nós</a></li>
         </ul>
 
-        <div class="total-container">
-            <label for="total" id="total">Total:</label>
-            <input type="text" id="total" value="399,95" readonly>
-        </div>
 
-        <div class="final">
-            <a href="index.html">
-                <button>Continuar comprando</button>
-            </a>
-            <button>Finalizar Pagamento</button>
+        <div class="pesquisa">
+          <input type="text" placeholder="Pesquisar...">
+          <img src="/imagens/pesquisa.png" alt="Pesquisar">
         </div>
+      </div>
+      <div class="sessao">
+
+        <a href="/carrinho.html">
+          <img src="/imagens/carrinhodecompras.png" alt="Carrinho" class="carrinho">
+        </a>
+
+        <a href="/cadastro.html">
+          <button class="btn accent" id="cadastro">Cadastre-se</button>
+        </a>
+        <a href="/login.html">
+          <button class="btn primary" id="login">Login</button>
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="cabecalho">
+        <h1 class="titulo">Carrinho de Compras</h1>
+      </div>
+
+      <ul class="produtos-carrinho">
+        <li class="item">
+          <img src="imagens/linha.png" alt="Linha" />
+          <div class="detalhes">
+            <div class="info">
+              <h3>Linha</h3>
+              <p class="text-muted">R$ 79,99</p>
+            </div>
+            <div>
+            <label for="quantidade">Quantidade:</label>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          </div>
+        </li>
+
+        <li class="item">
+          <img src="imagens/boia.png" alt="Boia" />
+          <div class="detalhes">
+            <div class="info">
+              <h3>Boia</h3>
+              <p class="text-muted">R$ 79,99</p>
+            </div>
+            <div>
+            <label for="quantidade">Quantidade:</label>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          </div>
+        </li>
+
+        <li class="item">
+          <img src="imagens/molinete.png" alt="Molinetes" />
+          <div class="detalhes">
+            <div class="info">
+              <h3>Molinetes</h3>
+              <p class="text-muted">R$ 79,99</p>
+            </div>
+          <div>
+            <label for="quantidade">Quantidade:</label>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          </div>
+        </li>
+
+        <li class="item">
+          <img src="imagens/vara.png" alt="Vara" />
+          <div class="detalhes">
+            <div class="info">
+              <h3>Vara</h3>
+              <p class="text-muted">R$ 79,99</p>
+            </div>
+          <div>
+            <label for="quantidade">Quantidade:</label>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          </div>
+        </li>
+
+        <li class="item">
+          <img src="imagens/faca.png" alt="Faca" />
+          <div class="detalhes">
+            <div class="info">
+              <h3>Faca</h3>
+              <p class="text-muted">R$ 79,99</p>
+            </div>
+            <div>
+            <label for="quantidade">Quantidade:</label>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="total-container">
+        <label for="total" id="total">Total:</label>
+        <input type="text" id="total" value="R$ 399,95" readonly>
+      </div>
+
+      <div class="final">
+        <a href="index.html">
+          <button class="btn primary">Continuar comprando</button>
+        </a>
+        <button class="btn accent">Finalizar Pagamento</button>
+      </div>
     </div>
 
     <div class="pagamento">
-        .
+      .
     </div>
-</body>
+  </body>
 </html>
