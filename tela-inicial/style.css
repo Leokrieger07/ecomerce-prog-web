@@ -188,12 +188,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+        margin-top: 1.8em;
     gap: 80px;
-    padding: 60px;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    margin: 150px;
 }
 
 .produtos{
