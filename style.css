@@ -429,3 +429,13 @@ option {
 .price-information {
         margin-top: 0.35em;
 }
+
+.payment-methods {
+        margin-top: 1.4em;
+        font-size: 0.9rem
+}
+
+.delivery-info {
+        margin-top: 1em;
+        font-size: 1.1rem;
+}

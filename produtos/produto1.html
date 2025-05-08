@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,13 +10,12 @@
 <body>
     <header>
         <div class="esquerda">
-                <img src="/imagens/LogominimalistadaFisher-Parts.png" class="logo">
-                <ul class="menu">
-                    <li><a href="#artigos">Artigos</a></li>
-                    <li><a href="#botes">Botes</a></li>
-                    <li><a href="#sobre-nos">Sobre nós</a></li>
-                </ul>
-        
+            <img src="/imagens/LogominimalistadaFisher-Parts.png" class="logo">
+            <ul class="menu">
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#botes">Botes</a></li>
+                <li><a href="#sobre-nos">Sobre nós</a></li>
+            </ul>
 
             <div class="pesquisa">
                 <input type="text" placeholder="Pesquisar...">
@@ -23,11 +23,9 @@
             </div>
         </div>
         <div class="sessao">
-
             <a href="/carrinho.html">
                 <img src="/imagens/carrinhodecompras.png" alt="Carrinho" class="carrinho">
             </a>
-
             <a href="/cadastro.html">
                 <button class="btn accent" id="cadastro">Cadastre-se</button>
             </a>
@@ -37,41 +35,57 @@
         </div>
     </header>
 
-        <div class="product-container">
-                <div class="image-container">
-                        <img>
-                </div>
-                <div class="product-info-container">
-                        <div>
-                                <h1>Molinete</h1>
-                                <p>O molinete é usado normalmente na pesca.</p>
-                                <div class="price-information">
-                                        <p>R$ 79,99</p>
-                                        <p class="price-accent">R$ 68,97(no pix)</p>
-                                        <p class="text-info text-muted">12x de R$ 6,66<p> 
-                                </div>
-
-                                <div>
-                                        <label for="quantidade">Quantidade:</label>
-                                        <select>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                        </select>
-                                </div>
-                        </div>
-                        <div>
-                                <button class="btn primary entire">Adicionar ao Carrinho</button>
-                                <button class="btn accent entire">Comprar</button>
-                        </div>
-                </div>
+    <div class="product-container">
+        <div class="image-container">
+            <img src="/imagens/molinete.jpg" alt="Molinete">
         </div>
+        <div class="product-info-container">
+            <div>
+                <h1>Molinete</h1>
+                <p>O molinete é usado normalmente na pesca.</p>
+                <div class="price-information">
+                    <p>R$ 79,99</p>
+                    <p class="price-accent">R$ 68,97 (no Pix)</p>
+                    <p class="text-info text-muted">ou 12x de R$ 6,66 no cartão</p>
+                </div>
 
-                        <div class="rodape">
+                <div>
+                    <label for="quantidade">Quantidade:</label>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="payment-methods">
+                    <h3>Formas de pagamento:</h3>
+                    <ul>
+                        <li>Cartão de Crédito (Visa, MasterCard, Elo, American Express)</li>
+                        <li>Cartão de Débito</li>
+                        <li>Pix</li>
+                        <li>Boleto Bancário</li>
+                    </ul>
+                </div>
+
+                <div class="delivery-info">
+                    <h3>Previsão de entrega:</h3>
+                    <p>De 5 a 8 dias úteis após a confirmação do pagamento.</p>
+                </div>
+            </div>
+
+            <div>
+                <button class="btn primary entire">Adicionar ao Carrinho</button>
+                <button class="btn accent entire">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="rodape">
         <footer>
-            <button class="inicio"> Voltar ao inicio</button>
+            <button class="inicio">Voltar ao início</button>
             <div class="footer">
                 <div class="coluna">
                     <h3>Sobre Nós</h3>
@@ -91,6 +105,7 @@
                 </div>
             </div>
         </footer>
-        </div>
+    </div>
 </body>
 </html>
+
