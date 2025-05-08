@@ -140,7 +140,7 @@ body {
 }
 
 .total-container {
-    width: 100%; /* ocupa toda a linha */
+    width: 100%; 
     display: flex;
     align-items: center;
     gap: 10px;
