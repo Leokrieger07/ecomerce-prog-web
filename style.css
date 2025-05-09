@@ -186,19 +186,18 @@ header {
     text-align: center;
 }
 
-.loja {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-        margin-top: 1.8em;
-    gap: 80px;
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 30px;
+    padding: 30px;
 }
 
 .produtos{
     width: 22%;
     box-sizing: border-box;
     display: flex;
-    padding: 8px;
+    padding: 15px 0;
     background-color: white;
     border-radius: 10px;
     flex-direction: column;
@@ -212,16 +211,95 @@ header {
 
 }
 
-.produto {
+.product-card {
     width: 100%;
-    height: 80%;
-    padding: 20px;
-    border: 1px solid #242424;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     border-radius: 8px;
-    text-align: center;
     overflow: hidden;
     box-sizing: border-box;
-  }
+    text-decoration: none;
+}
+
+.product-image-card {
+    width: 100%;
+    height: 34vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.product-card-upper:hover .product-image-card img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.product-image-card img {
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+.product-card-upper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    position: relative;
+}
+
+.product-loja-info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.product-price-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-card {
+    font-size: 1.3rem;
+}
+
+.or-price-card {
+    font-size: 1.1rem;
+}
+
+.tag {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    background-color: #ffff;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 9999;
+    top: 15px;
+    left: 15px;
+}
+
+.tag.variant-red {
+    color: white;
+    background-color: #fc030b;
+}
+
+
+.tag.variant-yellow {
+    color: white;
+    background-color: #f4fc03;
+}
+
+
+.tag.variant-green {
+    color: white;
+    background-color: #1ed649;
+}
 
 .produtos span {
         margin-top: 0.2em;
