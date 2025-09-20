@@ -5,23 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fishing Parts</title>
         <link rel="stylesheet" href="style.css">
+        <script src="./main.js" defer></script>
     </head>
     <body>
         <header>
             <div class="esquerda">
+                <a href="index.html">
                 <img src="/imagens/LogominimalistadaFisher-Parts.png" alt="Logo Fisher Parts" class="logo">
+                </a>
                 <ul class="menu">
                     <li><a href="#artigos">Artigos</a></li>
                     <li><a href="#botes">Botes</a></li>
                     <li><a href="#sobre-nos">Sobre nós</a></li>
                 </ul>
 
+            </div>
 
                 <div class="pesquisa">
-                    <input type="text" placeholder="Pesquisar...">
+                    <input type="text" id="barraPesquisa" placeholder="Pesquisar..." autocomplete="off">
                     <img src="/imagens/pesquisa.png" alt="Pesquisar">
+                    <div id="resultPesquisa"></div>
                 </div>
-            </div>
+            
             <div class="sessao">
                 <a href="/carrinho.html">
                     <img src="/imagens/carrinhodecompras.png" alt="Carrinho" class="carrinho">
@@ -35,6 +40,8 @@
                 </a>
             </div>
         </header>
+
+        <div class="cardContainer"></div>
         <section id="heroSection">
             <div class="hero-card">
                 <h2>LANÇAMENTO EXCLUSIVO</h2>
@@ -122,6 +129,40 @@
                     </div>
                 </div>
             </a>
+
+            <a href="/produtos/produto3.html" class="product-card">
+                <div class="product-card-upper">
+                    <span class="tag variant-green">Novidade</span>
+                    <div class="product-image-card">
+                        <img src="/imagens/vara.png" alt="vara">
+                    </div>
+                </div>
+                <div class="product-loja-info">
+                    <h3>Vara</h3>
+                    <div class="product-price-info">
+                        <span class="price-card">R$ 79,99</span>
+                        <span class="or-price-card text-muted">Ou 4x de R$ 19,99</span>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="/produtos/produto6.html" class="product-card">
+                <div class="product-card-upper">
+                    <span class="tag variant-green">Piranha</span>
+                    <div class="product-image-card">
+                        <img src="/imagens/linha.png" alt="linha">
+                    </div>
+                </div>
+                <div class="product-loja-info">
+                    <h3>Linha</h3>
+                    <div class="product-price-info">
+                        <span class="price-card">R$ 79,99</span>
+                        <span class="or-price-card text-muted">Ou 4x de R$ 19,99</span>
+                    </div>
+                </div>
+            </a>
+
         </div>
 
         <div class="rodape">

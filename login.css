@@ -8,22 +8,29 @@ body {
     background-color: #070707;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    flex-direction: column;
+    padding-top:50px;
+}
+
+.logologinecadastro img{
+    width: 200px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 .container{
-    border: 2px solid rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding: 45px;
+    padding: 25px;
     background-color: transparent;
     border-radius: 10px;
-    margin: 300px;
     background-color: rgb(17, 16, 16);
-    width: 350px;
+    width: 400px;
     height: auto;
 }
 
@@ -31,18 +38,18 @@ body {
 h1{
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica;
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 10px;
 }
 
 
 input{
-    border-radius: 10px;
+    border: none;
     width: 300px;
     height: 45px;
     background-color: rgb(255, 255, 255);
     display: flex;
-    border: 2px solid rgb(224, 56, 4);
+    border-bottom: 1px solid rgb(224, 56, 4);
     flex: 1;
     font-size: 16px;
     padding: 8px;
@@ -51,26 +58,32 @@ input{
     margin: 20px;
 }
 
+input:focus{
+    outline: none;
+}
+
 input:hover{
-    border: 2px solid rgb(255, 255, 255);;
+    transform: scale(1.02);
+    transition: 0.2s;
 }
 
 .btnEntrar{
-    background-color: black;
-    color: white;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(226, 87, 45);
     width: 200px;
     height: 40px;
     font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
-    border-color: rgb(190, 60, 16);
     margin-top: 10px;
     transition: 0.1s;
 }
 
 .btnEntrar:hover{
-    background-color: rgb(37, 32, 29);
+    background-color: rgb(224, 56, 4);
     transform: scale(1.05);
+    color: rgb(17, 16, 16);
 }
 
 .cadastro {
