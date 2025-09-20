@@ -60,6 +60,8 @@ input{
 
 input:focus{
     outline: none;
+    transform: scale(1.05);
+     transition: 0.2s;
 }
 
 input:hover{
