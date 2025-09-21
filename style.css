@@ -222,11 +222,12 @@ header {
     margin-top: 12px;
     font-weight: bold;
     color: var(--corident);
-    font-size: larger;
+    font-size: larger 28px;
     text-align: center;
 }
 
 .products-grid {
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px 30px;
