@@ -1,31 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="/cadastro.css">
-</head>
-<body>
-    
-     <div class="logologinecadastro">
-        <img src="/imagens/LogominimalistadaFisher-Parts.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body id="AuthLayout">
+    <div class="auth-image-container">
+      <img src="/imagens/login.jpg" alt="Imagem de login" />
     </div>
-    <div class="containerCadastro">
-        <h1>CRIAR CONTA</h1>
-        <div class="info">
-            <input type="text" class="nome" placeholder="Nome Completo" required>
-            <input type="datetime" class="nascimento" placeholder="Data de Nascimento"required>
-            <input type="text" class="cpf" placeholder="CPF" required>
-            <input type="email" class="email" placeholder="email" required>
-            <input type="password" class="senha" placeholder="Senha" required>
-            <input type="password" class="confirmacao" placeholder="Confirmar senha" required>
+
+    <div class="auth-container">
+      <div class="auth-logo">
+        <img src="/imagens/LogominimalistadaFisher-Parts.png" alt="Logo" />
+      </div>
+      <h1>Crie sua conta</h1>
+      <p class="text-muted">
+        Forneça as informações abaixo para criar sua conta.
+      </p>
+
+      <div class="inner-auth-container">
+        <div>
+          <label for="email">Nome completo</label>
+          <input
+            class="input-auth"
+            type="email"
+            id="email"
+            placeholder="Email..."
+            required
+          />
         </div>
-        
+
+        <div>
+          <label for="email">Endereço eletrônico</label>
+          <input
+            class="input-auth"
+            type="email"
+            id="email"
+            placeholder="Email..."
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">CPF</label>
+          <input
+            class="input-auth"
+            type="email"
+            id="email"
+            placeholder="CPF..."
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Data de nascimento</label>
+          <input
+            class="input-auth"
+            type="email"
+            id="email"
+            placeholder="xx/xx/xx"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password">Senha</label>
+          <input
+            class="input-auth"
+            type="password"
+            id="password"
+            placeholder="Senha..."
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password">Confirmar senha</label>
+          <input
+            class="input-auth"
+            type="password"
+            id="password"
+            placeholder="Senha..."
+            required
+          />
+        </div>
+
         <a href="/index.html">
-            <button class="cadastrar">Cadastrar</button>
+          <button class="btn">Criar conta</button>
         </a>
-         <p>Ja tem uma conta?<a href="/login.html">Login</a></p>
+      </div>
+
+      <p class="text-muted">
+        Não tem uma conta?
+        <a class="text-accent" href="/login.html">Entrar</a>
+      </p>
     </div>
-</body>
+  </body>
 </html>

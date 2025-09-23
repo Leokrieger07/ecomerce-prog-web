@@ -1,28 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="/login.css">
-</head>
-<body>
-    
-    <div class="logologinecadastro">
-        <img src="/imagens/LogominimalistadaFisher-Parts.png" alt="">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body id="AuthLayout">
+    <div class="auth-image-container">
+      <img src="/imagens/login.jpg" alt="Imagem de login" />
     </div>
-    <div class="container">
-        <h1>BEM VINDO!</h1>
 
-        <div class="login">
-            <input type="email" placeholder=Email... required>
-            <input type="password" placeholder="Senha..." required>
+    <div class="auth-container">
+      <div class="auth-logo">
+        <img src="/imagens/LogominimalistadaFisher-Parts.png" alt="Logo" />
+      </div>
+      <h1>Entre na sua conta</h1>
+      <p class="text-muted">
+        Forneça as informações abaixo para entrar na sua conta.
+      </p>
+
+      <div class="inner-auth-container">
+        <div>
+          <label for="email">Endereço eletrônico</label>
+          <input
+            class="input-auth"
+            type="email"
+            id="email"
+            placeholder="Email..."
+            required
+          />
         </div>
-        
+
+        <div>
+          <label for="password">Senha</label>
+          <input
+            class="input-auth"
+            type="password"
+            id="password"
+            placeholder="Senha..."
+            required
+          />
+        </div>
+
         <a href="/index.html">
-            <button class="btnEntrar">Entrar</button>
+          <button class="btn">Entrar</button>
         </a>
-        <p class="cadastro">Não tem uma conta? <a href="/cadastro.html">Cadastre-se</a></p>
+      </div>
+
+      <p class="text-muted">
+        Não tem uma conta?
+        <a class="text-accent" href="/cadastro.html">Cadastre-se</a>
+      </p>
     </div>
-</body>
+  </body>
 </html>
+
