@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="/style.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body id="AuthLayout">
     <div class="auth-image-container">
-      <img src="/imagens/login.jpg" alt="Imagem de login" />
+      <img src="/imagens/login.jpg" alt="Imagem de cadastro" />
     </div>
 
     <div class="auth-container">
@@ -21,79 +22,79 @@
       </p>
 
       <div class="inner-auth-container">
+
         <div>
-          <label for="email">Nome completo</label>
-          <input
-            class="input-auth"
-            type="email"
-            id="email"
-            placeholder="Email..."
-            required
-          />
+          <label for="nome">Nome completo</label>
+        </div>
+        <div>
+          <input class="input-auth" 
+          type="text" 
+          id="nome" 
+          placeholder="Nome completo..." 
+          required />
         </div>
 
         <div>
-          <label for="email">Endereço eletrônico</label>
-          <input
-            class="input-auth"
-            type="email"
-            id="email"
-            placeholder="Email..."
-            required
-          />
+          <label for="email">Endereço de Email</label>
+        </div>
+        <div>
+          <input class="input-auth" 
+          type="email" 
+          id="email" 
+          placeholder="Email..." 
+          required />
         </div>
 
         <div>
-          <label for="email">CPF</label>
-          <input
-            class="input-auth"
-            type="email"
-            id="email"
-            placeholder="CPF..."
-            required
-          />
+          <label for="cpf">CPF</label>
+        </div>
+        <div>
+          <input class="input-auth" 
+          type="text" 
+          id="cpf" 
+          placeholder="CPF..." 
+          required />
         </div>
 
         <div>
-          <label for="email">Data de nascimento</label>
-          <input
-            class="input-auth"
-            type="email"
-            id="email"
-            placeholder="xx/xx/xx"
-            required
-          />
+          <label for="dataNascimento">Data de nascimento</label>
+        </div>
+        <div>
+          <input class="input-auth" 
+          type="date" 
+          id="dataNascimento" 
+          required />
         </div>
 
         <div>
-          <label for="password">Senha</label>
-          <input
-            class="input-auth"
-            type="password"
-            id="password"
-            placeholder="Senha..."
-            required
-          />
+          <label for="senha">Senha</label>
+        </div>
+        <div>
+          <input class="input-auth" 
+          type="password" 
+          id="senha" 
+          placeholder="Senha..."
+          required />
         </div>
 
         <div>
-          <label for="password">Confirmar senha</label>
-          <input
-            class="input-auth"
-            type="password"
-            id="password"
-            placeholder="Senha..."
-            required
-          />
+          <label for="confirmSenha">Confirmar senha</label>
+        </div>
+        <div>
+          <input class="input-auth" 
+          type="password" 
+          id="confirmSenha" 
+          placeholder="Confirme a senha..." 
+          required />
         </div>
 
-        <a href="/index.html">
-          <button class="btn">Criar conta</button>
-        </a>
+        <div>
+          <button class="btn" id="btnCadastrar">Criar conta</button>
+        </div>
       </div>
 
       <p class="text-muted">
-        Não tem uma conta?
+        Já tem uma conta?
         <a class="text-accent" href="/login.html">Entrar</a>
       </p>
     </div>

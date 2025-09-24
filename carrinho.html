@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="pt-br'">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho - Fisher Parts</title>
     <link rel="stylesheet" href="/style.css" />
+    <script src="./main.js" defer></script>
   </head>
 
   <body>
@@ -24,21 +25,13 @@
       </div>
       <div class="sessao">
         <a href="/carrinho.html">
-          <img
-            src="/imagens/carrinhodecompras.png"
-            alt="Carrinho"
-            class="carrinho"
-          />
+          <img src="/imagens/carrinhodecompras.png" alt="Carrinho" class="carrinho" />
         </a>
-
-        <a href="/cadastro.html">
-          <button class="btn accent" id="cadastro">Cadastre-se</button>
-        </a>
-        <a href="/login.html">
-          <button class="btn primary" id="login">Login</button>
-        </a>
+        <a href="/cadastro.html"><button class="btn accent" id="cadastro">Cadastre-se</button></a>
+        <a href="/login.html"><button class="btn primary" id="login">Login</button></a>
       </div>
     </header>
+
     <div class="container">
       <div class="cabecalho">
         <h1 class="titulo">Carrinho de Compras</h1>
@@ -148,7 +141,22 @@
 
       <div class="total-container">
         <label for="total" id="total">Total:</label>
-        <input type="text" id="total" value="R$ 399,95" readonly />
+        <input type="text" id="totalinput" value="R$ 399,95" readonly />
+      </div>
+
+      <!-- Frete -->
+      <div class="frete-container">
+        <label for="cep">Digite seu CEP:</label>
+        <input type="text" id="cep" placeholder="Ex: 88780-000" />
+        <button class="btn" id="calcularFrete">Calcular frete</button>
+        <p id="freteValor" class="text-muted">Frete: R$ 0,00</p>
+      </div>
+
+      <div class="cupom-container">
+        <label for="cupom">Digite seu cupom:</label>
+        <input type="text" id="cupom" placeholder="Código do cupom" />
+        <button class="btn" id="aplicarCupom">Aplicar cupom</button>
+        <p id="mensagemCupom" class="text-muted"></p>
       </div>
 
       <div class="final">

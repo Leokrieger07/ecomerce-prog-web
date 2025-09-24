@@ -905,3 +905,11 @@ label {
   background-color: #252323;
   border-color: #ffffff21;
 }
+
+.alerta{
+    color: rgb(255, 0, 0);
+}
+
+#dataNascimento{
+    color: #817e7e;
+}
